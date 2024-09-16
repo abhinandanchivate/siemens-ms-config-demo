@@ -1,0 +1,4 @@
+services:
+  eureka-server2:
+    build: ./eureka-server2
+    container_name: eureka-server2
