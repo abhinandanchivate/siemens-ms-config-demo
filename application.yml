@@ -1,4 +1,11 @@
-services:
-  eureka-server2:
-    build: ./eureka-server2
-    container_name: eureka-server2
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics, env
+  endpoint:
+    health:
+      show-details: always
+    env:
+      enabled: true
+      show-values: always
