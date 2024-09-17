@@ -1,3 +1,8 @@
+
+eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_SERVER_URL}
 management:
   endpoints:
     web:
